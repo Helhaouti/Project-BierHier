@@ -1,0 +1,473 @@
+/*#region Whole site */
+    body {
+        font-size: 17px;
+        line-height: 1.47059;
+        font-weight: 400;
+        letter-spacing: -.022em;
+        background-color: white;
+        color: #333;
+        font-family: 'Raleway', sans-serif;
+        margin: 0;
+    }
+/*#endregion*/
+
+/*#region Chapternav*/
+    #chapternav {
+        background: rgba(83, 168, 238, 0.493);
+        overflow: hidden;
+        padding: 0;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 92px;
+        z-index: 9987;
+        box-sizing: content-box;
+    }
+
+    .chapternav-wrapper {
+        position: relative;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .chapternav-items {
+        list-style: none;
+        margin: 0 ;
+        padding: 10px 20px 50px 0px;
+        white-space: nowrap;
+    }
+
+    .chapternav-item {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 -.11765em;
+        padding: 0 20px;
+    }
+
+    .chapternav-icon {
+        background: center bottom no-repeat;
+        display: block;
+        margin: 0 auto 6px;
+        height: 54px;
+    }
+
+    .chapternav-label {
+        font-size: 11px;
+        line-height: 1.09091;
+        font-weight: 400;
+        letter-spacing: -.008em;
+        display: block;
+        margin: 0;
+    }
+
+    .chapternav-item-home {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("home (1).svg");
+    }
+
+    .chapternav-item-concerten {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("Logo Concerten.svg");
+    }
+
+    .chapternav-item-sport {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("trophy (1).svg");
+    }
+
+    .chapternav-item-recepten {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("book.svg");
+    }
+
+    .chapternav-item-contact {
+        width: 60px;
+        height: 60px;
+        background-size: 60px 60px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url("location.svg");
+    }
+
+    .chapternav-link {
+        color: #111;
+        display: block;
+        margin-top: 3px;
+        padding: 0;
+        position: relative;
+        z-index: 1;
+    }
+
+    #chapternav li {
+        text-align: center;
+    }
+
+    #chapternav li a {
+        text-decoration:none;
+        font-weight: 700;
+        color: #333;
+    }
+
+/*#endregion*/
+
+/*#region Sitecontent Homepage*/
+    .news a:link, #Stage-lopen-in-ALmere a:link {
+        text-decoration: none;
+        color: #333;
+        font-weight: 600;
+    }
+
+    @media all and (min-width: 550px) {
+        section#nieuws {
+            padding-bottom: 20px;
+        }
+    }
+
+    section {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .Koptekst-add {
+        margin-bottom: 0px;
+    }
+
+    img.nieuws-foto {
+        width: 100%;
+    }
+
+    @media all and (min-width: 550px) {
+        section {
+            display: inline-block;
+        }
+
+        section#nieuws {
+            width: 50%;
+            float: left;
+            padding: 20px 0px 20px 20px;
+        }
+        section#Stage-lopen-in-ALmere {
+            width: 50%;
+            float: right;
+            
+        }
+    }
+
+    @media all and (min-width: 800px) {
+        section#nieuws {
+            width: 70%;
+            float: left;
+        }
+        section#Stage-lopen-in-ALmere {
+            width: 30%;
+            float: right;
+        }
+        article.news {
+            display: inline-grid;
+            width: 48%;
+            margin-right: 20px;
+        }
+        article:nth-child(even){
+            margin-right: 0px;
+        }
+    }
+
+    @media all and (min-width: 1200px) {
+        body {
+            width: 1200px;
+            margin: auto;
+        }
+    }
+/*#endregion*/
+
+/*#region Sitecontent Recepten*/
+    #recepten-content {
+        margin: 20px;
+        display: inline-block
+    }
+
+    #recepten-content a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 400;
+    }
+
+    #recepten-content a:hover {
+        color: purple;
+    }
+
+    #recepten-content img {
+        width: 100%;
+    }
+
+    #recepten-content article {
+        padding: 20px 0px;
+    }
+
+    #recepten-content h3 {
+        margin-bottom: 0px;
+    }
+
+    #recepten-content h4 {
+        margin: 10px 0px;
+    }
+
+    @media all and (min-width: 550px) {
+        #recepten-content img{
+            width: 325px;
+            float: right;
+        } 
+
+        #recepten-content article {
+            clear: both;
+        }
+    }
+/*#endregion*/
+
+/*#region Sitecontent indu-Recepten*/
+    #recepten-indu-content img {
+        width: 450px;
+        float: right;
+    }
+
+    .recept-ingrediënten {
+        clear: both;
+        display: inline-block;
+    }
+
+    .recept-bereiding {
+        clear: both;
+    }
+
+/*#endregion*/
+
+/*#region Nocontent*/
+    #no-content {
+        text-align: center;
+        color: red;
+    }
+/*#endregion*/
+
+/*#region sitecontent contact*/
+    form pre {
+        display: block;
+        font-family: inherit;
+        white-space: pre;
+        margin: 0px;
+        text-align: right;
+    }
+
+    iframe {
+        width: 100%;
+        height: 300px;
+        border: 0;
+    }
+
+    @media all and (min-width: 550px) {
+        iframe {
+            width: 45%;
+            display: inline-block;
+        }
+
+        .contact-content p {
+            width: 45%;
+            display: inline-block;
+            padding-left: 20px;
+
+            position: relative;
+            top: -200px;
+        }
+    }
+
+    .contact-content {
+        margin: 20px;
+    }
+    .text-area-contact-form {
+        width: 30%;
+        height: 140px;
+        display: inline-block;
+        padding: 0px 20px 0px 0px;
+
+        /* bedoeld om positie van div aan te geven binnen form */
+        position: relative;
+        top: -233px;
+    }
+
+    .form-area-contact-form {
+        width: 60%;
+        display: inline-block;
+
+        box-sizing: border-box;
+    }
+    
+    #form-text {
+        height: 200px;
+        resize: none;
+    }
+
+/* Vormgeving van formulier-boxen*/    
+    .Form-text {
+        border-radius: 4px;
+        width: 100%;        
+        text-rendering: auto;
+        color: initial;
+        letter-spacing: inherit;
+        word-spacing: inherit;
+        text-transform: none;
+        text-indent: 5px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        margin: 0px 0px 20px 0px;
+        font: inherit;
+
+        background-color: white;
+        cursor: text;
+        padding: 1px;
+        border-width: 2px;
+        border-style: inset;
+        border-color: initial;
+        border-image: initial;
+    }
+
+/*#endregion*/
+
+/*#region Sitemap */
+    #title-sitemap {
+        margin-left: 20px;
+        margin-bottom: 0px;
+        text-align: left;
+    }
+
+    .sitemap {
+        clear: both;
+        overflow: hidden;
+        padding: 0px;
+        margin: auto;
+        background: #d0d0d0;
+        }
+    
+    .container {
+        padding: 0;
+}
+
+    .kollom {
+        text-decoration: none;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .kollom h3 {
+        margin-top: 0px;
+    }
+
+
+    .sitemap ul {
+        margin: 0px;
+        margin-bottom: 20px;
+        padding: 0px;
+        list-style: none;
+    }
+    .sitemap ul, .sitemap h3 {
+        text-align: center;
+    }
+
+    .sitemap li {
+        padding: 5px 10px;
+    }
+
+    .sitemap li a {
+        text-decoration:none;
+        font-weight: 700;
+        color: #333;
+    }
+
+    @media all and (min-width: 550px) {
+    .kollom {
+        width: 49%;
+        display: inline-block;
+    }
+    
+    .sitemap li {
+        padding: 5px 0px;
+    }
+}
+
+    @media all and (min-width: 800px) {
+    .kollom {
+        width: 33%;
+    }
+}
+
+/*#endregion*/
+
+/*#region Footer*/
+    #chapterfooter {
+        display: inline-block;
+    }
+
+    footer {
+        padding: 20px 0px;
+        background: darkgray;
+        clear: both;
+    }
+    footer h3 {
+        padding-bottom: 20px;
+    }
+
+     footer h3, footer p {
+        margin: 0px 20px;
+    }
+
+    .kollomfooter {
+        width: 45%;
+        display: inline-block;
+    }
+
+    img#team-img {
+        height: 150px;
+    }
+
+    @media all and (min-width: 550px) {
+        img#team-img {
+            padding-left: 80px;    
+        }
+    }
+
+    @media all and (min-width: 800px) {
+        img#team-img {
+            padding-left: 200px;
+        }
+    }
+
+    @media all and (min-width: 1200px) {
+        img#team-img {
+            padding-left: 390px;
+        }
+    }
+        
+/*#endregion*/
+
+/*#region copyright*/
+    .copyright {
+        text-align: center;
+    }
+/*#endregion*/
